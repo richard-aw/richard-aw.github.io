@@ -5,6 +5,13 @@ body {
 
 }
 
+header {
+    text-align: center;
+}
+
+img.user {
+    border-radius: 50%;
+}
 main{ 
     background-color: white;
     max-width: 1024px;
