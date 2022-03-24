@@ -37,6 +37,9 @@ a {
 
 }
 
+article figure img {
+    width: 100%;
+}
 footer{
     border-top: 1px solid black;
     padding: 1em 2em 3em 2em;
