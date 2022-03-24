@@ -13,4 +13,9 @@ main{
 
 article { 
     padding: lem;
+    
+}
+
+article p {
+    text-align: justify;
 }
