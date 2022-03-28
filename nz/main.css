@@ -1,16 +1,15 @@
 /* Stile für die Neuseelandreise */
 
-body { 
+body {
     background-color: #eeeeee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 header {
     text-align: center;
 }
 
-img.banner{
+img.banner {
     width: 100%;
 }
 
@@ -18,42 +17,45 @@ img.user {
     border-radius: 50%;
     margin-top: -50px;
 }
-main{ 
+
+main {
     background-color: white;
     max-width: 1024px;
     margin: auto;
 }
 
-article { 
-    padding: lem;
-    
+article {
+    padding: 1em;
 }
 
 article p {
     text-align: justify;
     line-height: 1.2em;
 }
-a {
-    color: black;
-
-}
 
 article figure img {
     width: 100%;
 }
-footer{
+
+a {
+    color: black;
+}
+
+footer {
     border-top: 1px solid black;
     padding: 1em 2em 3em 2em;
 }
 
-footer .back{
+footer .back {
     float: left;
 }
 
-footer .next{
+footer .next {
     float: right;
 }
 
 .shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
