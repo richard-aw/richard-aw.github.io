@@ -51,5 +51,14 @@ L.marker([lat, lng]).addTo(map)
    }
 
    for(let huts of HUTS) {
-    L.circleMarker([huts.lat, huts.lng]).addTo(map)
+    let popup = `
+    <h3>${huts.name}</h3>
+    <h4>${huts.region}</h4>
+    <hr>
+    <p>${huts.info}</p>
+    <img src="${huts.image}"alt="Vorschaubild">
+    <hr>
+    <a href="${huts.link}"target=Neuseeland>Link zur Hütte</a>
+    `;
+    L.circleMarker([huts.lat, huts.lng]).addTo(map).bindPopup(popup);
 }
