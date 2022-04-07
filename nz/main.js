@@ -38,7 +38,7 @@ L.marker([lat, lng]).addTo(map)
 
   for(let etappe of ETAPPEN) {
        let popup = 
-    `<h3> ${etappe.titel} (Etappe ${etappe.nr})</h3>
+    `<h3> ${etappe.title} (Etappe ${etappe.nr})</h3>
     <ul>
     <li>geogr. Länge:${etappe.lng}</li>
     <li>geogr. Breite:${etappe.lat}</li>
@@ -48,7 +48,7 @@ L.marker([lat, lng]).addTo(map)
     //console.log(etappe);
     L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
     //Etappennavigation erweitern
-    let link = `<a href="https://${etappe.github}.github.io/nz/"class="etappenLink""title=${etappe.titel}">${etappe.nr}</a>`
+    let link = `<a href="https://${etappe.github}.github.io/nz/"class="etappenLink""title=${etappe.title}">${etappe.nr}</a>`
     
     document.querySelector("#navigation").innerHTML += link;
     
