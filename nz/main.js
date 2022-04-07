@@ -18,6 +18,13 @@ console.log('id="map"')
 console.log(`latitude ${lat}`);
 
 console.log(ETAPPEN);
+console.log(ETAPPEN[0]);
+console.log(ETAPPEN[0].nr);
+console.log(ETAPPEN[0].github);
+console.log(ETAPPEN[0].titel);
+console.log(ETAPPEN[0].wikipedia);
+console.log(ETAPPEN[0].lat);
+console.log(ETAPPEN[0].lng);
 
 coords = [-44.004674,170.477121];
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -25,10 +32,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 let popup = 
-`<h3> Lake Tekapo </h3>
+`<h3> ${ETAPPEN[0].titel} (Etappe ${ETAPPEN[0].nr})</h3>
 <ul>
-<li>geogr. Länge:${lng}</li>
-<li>geogr. Breite:${lat}</li>
+<li>geogr. Länge:${ETAPPEN[0].lng}</li>
+<li>geogr. Breite:${ETAPPEN[0].lat}</li>
+<li><a href="${ETAPPEN[0].wikipedia}">Link zur Wikipediaseite</a></li>
+<li><a href="${ETAPPEN[0].github}">Link zur Etappenseite</a></li>
 </ul>`;
 
 L.marker([lat, lng]).addTo(map)
