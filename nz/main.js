@@ -1,7 +1,7 @@
 /*Neuseelandreise*/
 //einzeiliger Kommentar
 let lat = -44.004674;
-let lgn = 170.477121;
+let lng = 170.477121;
 let zoom = 10;
 
 let coords = [-44.004674,170.477121];
@@ -17,6 +17,8 @@ console.log("text");
 console.log('id="map"')
 console.log(`latitude ${lat}`);
 
+console.log(ETAPPEN);
+
 coords = [-44.004674,170.477121];
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -25,7 +27,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let popup = 
 `<h3> Lake Tekapo </h3>
 <ul>
-<li>geogr. Länge:${lgn}</li>
+<li>geogr. Länge:${lng}</li>
 <li>geogr. Breite:${lat}</li>
 </ul>`;
 
