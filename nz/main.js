@@ -51,5 +51,5 @@ L.marker([lat, lng]).addTo(map)
    }
 
    for(let huts of HUTS) {
-    L.marker([huts.lat, huts.lng]).addTo(map)
+    L.circleMarker([huts.lat, huts.lng]).addTo(map)
 }
