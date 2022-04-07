@@ -22,13 +22,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-let popup = `<h3> Lake Tekapo </h3>
+let popup = 
+`<h3> Lake Tekapo </h3>
 <ul>
 <li>geogr. Länge:${lgn}</li>
 <li>geogr. Breite:${lat}</li>
 </ul>`;
 
-L.marker([lat, long]).addTo(map)
+L.marker([lat, lng]).addTo(map)
     .bindPopup(popup)
     .openPopup();
 
