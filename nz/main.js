@@ -11,11 +11,25 @@ console.log(coords);
 console.log(coords[0]);
 console.log(coords[1]);
 console.log(coords.length)
-let coords = [-44.004674,170.477121];
+
+console.log("text");
+console.log("text");
+console.log('id="map"')
+console.log(`latitude ${lat}`);
+
+coords = [-44.004674,170.477121];
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+let popup = `<h3> Lake Tekapo </h3>
+<ul>
+<li>geogr. Länge:${lgn}</li>
+<li>geogr. Breite:${lat}</li>
+</ul>`;
+
 L.marker([lat, long]).addTo(map)
-    .bindPopup('<h3> Lake Tekapo </h3>')
+    .bindPopup(popup)
     .openPopup();
+
+   
