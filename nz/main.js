@@ -36,7 +36,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([lat, lng]).addTo(map)
 
 
-   for(let etappe of ETAPPEN) {
+  for(let etappe of ETAPPEN) {
        let popup = 
     `<h3> ${etappe.titel} (Etappe ${etappe.nr})</h3>
     <ul>
@@ -49,3 +49,7 @@ L.marker([lat, lng]).addTo(map)
     L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
     
    }
+
+   for(let huts of HUTS) {
+    L.marker([huts.lat, huts.lng]).addTo(map)
+}
